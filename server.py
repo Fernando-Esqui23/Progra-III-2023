@@ -1,6 +1,6 @@
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from urllib import parse
-port = 3000
+port = 8080
 
 class miServer(SimpleHTTPRequestHandler):
     def do_GET(self):

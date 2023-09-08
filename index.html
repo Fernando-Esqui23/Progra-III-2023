@@ -7,13 +7,13 @@
 </head>
 <body>
 
-    saludo: <input type = "text" name="txtNombre" id="txtNombre>
+    saludo: <input type = "text" name="txtNombre" id="txtNombre">
     <div id="dvSaludo"></div>
 
     <script>
         document.addEventListener("DOMContentLoaded", e=>{
             txtNombre.addEventListener("keyup", event=>{
-                fetch("https://supreme-space-carnival-v9q944955jvfwwrj-3000.app.github.dev/", {
+                fetch("https://supreme-space-carnival-v9q944955jvfwwrj-8080.app.github.dev/", {
                     method:"POST",
                     body: txtNombre.value
                 }).then(resp=>resp.text())
